@@ -18,16 +18,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/media-queries.css">
     
 
 </head>
 <body>
     <div class="nav-img-box">
     <header>
-        <nav role="navigation">
-            <a href="index.html" class="logo-me">MARISA <span>GILL</span> </a>
-
-            <div class="main-nav-me js--mobile-nav-1">
+        <a href="index.html" class="logo-me">MARISA <span>GILL</span> </a>
+        <div class="mobile-nav-burger js--mobile-nav-icon">
+            <a><ion-icon name="menu"></ion-icon></a>
+          </div>
+        <nav>
+           <div class="main-nav-me js--mobile-nav-1">
                 <a><strong>ABOUT</strong></a>
                 <div class="dropdown active-me dropdown-1 drop-active">
                     <div class="main-nav-me nav-active">
@@ -44,22 +47,22 @@
                 <a>OBRAS</a>
                 <div class="dropdown active-me dropdown-2" id="js-drop-obras">
                     <div class="main-nav-me">
+                        <a href="haikus.html">Haiku</a>
+                    </div>
+                    <div class="main-nav-me">
+                        <a href="nocturnos.html">Nocturnos</a>
+                    </div>
+                    <div class="main-nav-me">
+                        <a href="poemas.html">Poemas</a>
+                    </div>
+                    <div class="main-nav-me">
                         <a href="suite.html">Suite</a>
                     </div>
                     <div class="main-nav-me">
                         <a href="herbario.html">Herbario</a>
                     </div>
                     <div class="main-nav-me">
-                        <a href="retratos.html">Retratos de la naturaleza</a>
-                    </div>
-                    <div class="main-nav-me">
-                        <a href="poemas.html">Poemas</a>
-                    </div>
-                    <div class="main-nav-me">
-                        <a href="nocturnos.html">Nocturnos</a>
-                    </div>
-                    <div class="main-nav-me">
-                        <a href="haikus.html">Haiku</a>
+                        <a href="retratos.html">De la naturaleza</a>
                     </div>
                 </div>
             </div>
@@ -76,20 +79,19 @@
 <!------- CV SECTION ------->
     <div class="box">
         <div class="cv-box">
-            <!-- <h1>
-                CV
-            </h1>
-     -->
             <div class="texto-box">
                 <h2>Marisa Gill</h2>
                     <p>
-                        I was born in Buenos Aires, Argentina, in 1959. Having graduated from The National School of Fine Arts Manuel Belgrano, she improved all the classic graphic techniques with Maestro Alfredo de Vincenzo and Margarita Galetar. She also studied photoengraving, photography, and attended courses and seminars on Art History and Curatorship. Since 1987 she has been participating in national and international art exhibitions and fairs. At the moment, she lives and works in the city of Buenos Aires.
+                        Nació en la ciudad de Buenos Aires en 1959. Egresada de la Escuela Nacional de Bellas Artes “Manuel Belgrano”. Como discípula del Maestro Alfredo de Vincenzo y de Margarita Galetar, perfeccionó las técnicas del aguafuerte y buril.<br>
+                        Se especializó en grabado no-tóxico en los talleres de Andrea Juan y Lucrecia Urbano. Estudió fotografía en el Foto Club Argentino. Asistió a seminarios de Historia del Arte y Curaduría. <br>
+                        Expone regularmente desde 1987 y participa de salones nacionales e internacionales, habiendo recibido premios en varias oportunidades. <br>
+                        Vive y trabaja en Buenos Aires.
                     </p>
             </div>
 
             <div class="texto-box">
                 <h3>
-                    Solo exhibitions
+                    Exposiciones Individuales
                 </h3>
                     <p>
                         “De natural y–eza", Obra Gráfica, Sala Municipal de Exposiciones San Martín de los Andes, Neuquén, Argentina (2012). 
@@ -110,7 +112,7 @@
     
             <div class="texto-box">
                 <h3>
-                    Selected group exhibitions
+                    Exposiciones colectivas
                 </h3>
                     <div class="texto-box texto-box-2">
                         <h4>
@@ -273,7 +275,8 @@
     <p>&copy; <script>document.write( new Date().getFullYear() );</script> Marisa Gill</p>
   </footer>
 
-
+<!-- Fontawesome -->
+<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 <!-- JQuery -->
 <script
 src="https://code.jquery.com/jquery-3.4.1.js"

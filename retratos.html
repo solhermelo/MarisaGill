@@ -22,14 +22,17 @@
     <script src="https://kit.fontawesome.com/47e4b043cb.js" crossorigin="anonymous"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/media-queries.css">
 
 </head>
 <body>
-    <div class="nav-img-box">
+    <div class="nav-img-box-obras">
         <header>
-            <nav role="navigation">
-                <a href="index.html" class="logo-me">MARISA <span>GILL</span> </a>
-    
+            <a href="index.html" class="logo-me">MARISA <span>GILL</span> </a>
+            <div class="mobile-nav-burger js--mobile-nav-icon">
+                <a><ion-icon name="menu"></ion-icon></a>
+              </div>
+            <nav>
                 <div class="main-nav-me js--mobile-nav-1" id="js-about">
                     <a>ABOUT</a>
                     <div class="dropdown active-me dropdown-1" id="js-drop-about">
@@ -47,22 +50,22 @@
                     <a><span>OBRAS</span></a>
                     <div class="dropdown active-me dropdown-2 drop-active">
                         <div class="main-nav-me">
+                            <a href="haikus.html">Haiku</a>
+                        </div>
+                        <div class="main-nav-me">
+                            <a href="nocturnos.html">Nocturnos</a>
+                        </div>
+                        <div class="main-nav-me">
+                            <a href="poemas.html">Poemas</a>
+                        </div>
+                        <div class="main-nav-me">
                             <a href="suite.html">Suite</a>
                         </div>
                         <div class="main-nav-me">
                             <a href="herbario.html">Herbario</a>
                         </div>
                         <div class="main-nav-me nav-active">
-                            <a href="retratos.html">Retratos de la naturaleza</a>
-                        </div>
-                        <div class="main-nav-me">
-                            <a href="poemas.html">Poemas</a>
-                        </div>
-                        <div class="main-nav-me">
-                            <a href="nocturnos.html">Nocturnos</a>
-                        </div>
-                        <div class="main-nav-me">
-                            <a href="haikus.html">Haiku</a>
+                            <a href="retratos.html">De la naturaleza</a>
                         </div>
                     </div>
                 </div>
@@ -78,30 +81,10 @@
         </header>
 
     <div class="slider_wrap">
-        <!-- <div class="obras-flechas">
-            <i class="fas fa-chevron-left"></i>
-            <i class="fas fa-chevron-right"></i>
-        </div> -->
         <div class="banner_slider">
             <div class="obras-img-box">
-                <div class="obras-center-box">
-                    <a href="resources/img/retratos-1.JPG" data-fancybox="group"><img src="resources/img/retratos-1.jpg" alt=""></a>
-                    <div class="obras-box-texto">
-                        <p>De la naturaleza</p>
-                        <p>Serie</p>
-                        <p>1 /2</p>
-                        <p>Fotograbado</p>
-                        <p>35cm x 50cm</p>
-                        <p>Papel Fabriano Cotton</p>
-                        <p>2010</p>
-                    </div>
-                </div>
-
-                <i class="fas fa-chevron-right slick-next" id="flecha-derecha"></i>
-            </div>
-            <div class="obras-img-box">
-                <div class="obras-center-box">
-                    <a href="resources/img/retratos-2.JPG" data-fancybox="group"></a><img src="resources/img/retratos-2.jpg" alt="">
+                <div class="obras-center-box retratos-responsive">
+                    <a href="resources/img/retratos-1.jpg" data-fancybox="group"><img src="resources/img/retratos-1.jpg" alt=""></a>
                     <div class="obras-box-texto">
                         <p>De la naturaleza</p>
                         <p>Serie</p>
@@ -114,8 +97,22 @@
                 </div>
             </div>
             <div class="obras-img-box">
-                <div class="obras-center-box">
-                    <a href="resources/img/retratos-3.JPG" data-fancybox="group"><img src="resources/img/retratos-3.jpg" alt=""></a>
+                <div class="obras-center-box retratos-responsive">
+                    <a href="resources/img/retratos-2.jpg" data-fancybox="group"><img src="resources/img/retratos-2.jpg" alt=""></a>
+                    <div class="obras-box-texto ">
+                        <p>De la naturaleza</p>
+                        <p>Serie</p>
+                        <p>1 /2</p>
+                        <p>Fotograbado</p>
+                        <p>35cm x 50cm</p>
+                        <p>Papel Fabriano Cotton</p>
+                        <p>2010</p>
+                    </div>
+                </div>
+            </div>
+            <div class="obras-img-box">
+                <div class="obras-center-box retratos-responsive">
+                    <a href="resources/img/retratos-3.jpg" data-fancybox="group"><img src="resources/img/retratos-3.jpg" alt=""></a>
                     <div class="obras-box-texto">
                         <p>De la naturaleza</p>
                         <p>Serie</p>
@@ -128,8 +125,8 @@
                 </div>
             </div>
             <div class="obras-img-box">
-                <div class="obras-center-box">
-                    <a href="resources/img/retratos-4.JPG" data-fancybox="group"><img src="resources/img/retratos-4.jpg" alt=""></a>
+                <div class="obras-center-box retratos-responsive">
+                    <a href="resources/img/retratos-4.jpg" data-fancybox="group"><img src="resources/img/retratos-4.jpg" alt=""></a>
                     <div class="obras-box-texto">
                         <p>De la naturaleza</p>
                         <p>Serie</p>
@@ -142,8 +139,8 @@
                 </div>
             </div>
             <div class="obras-img-box">
-                <div class="obras-center-box">
-                    <a href="resources/img/retratos-5.JPG" data-fancybox="group"><img src="resources/img/retratos-5.jpg" alt=""></a>
+                <div class="obras-center-box retratos-responsive">
+                    <a href="resources/img/retratos-5.jpg" data-fancybox="group"><img src="resources/img/retratos-5.jpg" alt=""></a>
                     <div class="obras-box-texto">
                         <p>De la naturaleza</p>
                         <p>Serie</p>
@@ -156,8 +153,8 @@
                 </div>
             </div>
             <div class="obras-img-box">
-                <div class="obras-center-box">
-                    <a href="resources/img/retratos-6.JPG" data-fancybox="group"><img src="resources/img/retratos-6.jpg" alt=""></a>
+                <div class="obras-center-box retratos-responsive">
+                    <a href="resources/img/retratos-6.jpg" data-fancybox="group"><img src="resources/img/retratos-6.jpg" alt=""></a>
                     <div class="obras-box-texto">
                         <p>De la naturaleza</p>
                         <p>Serie</p>
@@ -169,69 +166,81 @@
                     </div>
                 </div>
             </div>
-            <div class="obras-img-box">
+            <!-- <div class="obras-img-box">
                 <div class="obras-center-box obras-center-7">
-                    <a href="resources/img/retratos-7.JPG" data-fancybox="group"><img src="resources/img/retratos-7.jpg" alt=""></a>
+                    <a href="resources/img/retratos-8.jpg" data-fancybox="group"><img src="resources/img/retratos-8.jpg" alt=""></a>
                     <div class="obras-box-texto obras-texto-7">
                         <p>Lorem ipsum dolor sit amet.</p>
                         <p>Lorem ipsum dolor sit amet.</p>
                         <p>Lorem ipsum dolor sit amet.</p>
                     </div>
                 </div>
+            </div> -->
+            <div class="obras-img-box">
+                <div class="obras-center-box retratos-responsive">
+                    <a href="resources/img/retratos-9.jpg" data-fancybox="group"><img src="resources/img/retratos-9.jpg" alt=""></a>
+                    <div class="obras-box-texto herbario-texto-7-responsive">
+                        <p>Hilos Negros</p>
+                        <p>Serie</p>
+                        <p>1 /1</p>
+                        <p>Papel hecho a mano, hilos de algodón</p>
+                        <p>28cm x 45cm</p>
+                        <p>2011</p>
+                    </div>
+                </div>
             </div>
             <div class="obras-img-box">
+                <div class="obras-center-box retratos-responsive">
+                    <a href="resources/img/retratos-10.jpg" data-fancybox="group"><img src="resources/img/retratos-10.jpg" alt=""></a>
+                    <div class="obras-box-texto herbario-texto-7-responsive">
+                        <p>Hilos Negros</p>
+                        <p>Serie</p>
+                        <p>1 /1</p>
+                        <p>Papel hecho a mano, hilos de algodón</p>
+                        <p>28cm x 45cm</p>
+                        <p>2011</p>
+                    </div>
+                </div>
+            </div>
+            <div class="obras-img-box">
+                <div class="obras-center-box obras-center-7 retratos-responsive-bigger">
+                    <a href="resources/img/retratos-7.jpg" data-fancybox="group"><img src="resources/img/retratos-7.jpg" alt=""></a>
+                    <div class="obras-box-texto obras-texto-7 reatratos-texto-7">
+                        <p>April</p>
+                        <p>Litografía</p>
+                        <p>1 /2</p>
+                        <p>37cm x 100cm</p>
+                        <p>Papel Canson Edition</p>
+                        <p>2014</p>
+                    </div>
+                </div>
+            </div>
+            <div class="obras-img-box">
+                <div class="obras-center-box obras-center-7 retratos-responsive-bigger">
+                    <a href="resources/img/retratos-11.jpg" data-fancybox="group"><img src="resources/img/retratos-11.jpg" alt=""></a>
+                    <div class="obras-box-texto obras-texto-7 reatratos-texto-7">
+                        <p>May</p>
+                        <p>Litografía</p>
+                        <p>1 /2</p>
+                        <p>37cm x 100cm</p>
+                        <p>Papel Canson Edition</p>
+                        <p>2014</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="obras-img-box">
                 <div class="obras-center-box obras-center-7">
-                    <a href="resources/img/retratos-8.JPG" data-fancybox="group"><img src="resources/img/retratos-8.jpg" alt=""></a>
+                    <a href="resources/img/retratos-12.jpg" data-fancybox="group"><img src="resources/img/retratos-12.jpg" alt=""></a>
                     <div class="obras-box-texto obras-texto-7">
                         <p>Lorem ipsum dolor sit amet.</p>
                         <p>Lorem ipsum dolor sit amet.</p>
                         <p>Lorem ipsum dolor sit amet.</p>
                     </div>
                 </div>
-            </div>
-            <div class="obras-img-box">
-                <div class="obras-center-box">
-                    <a href="resources/img/retratos-9.JPG" data-fancybox="group"><img src="resources/img/retratos-9.jpg" alt=""></a>
-                    <div class="obras-box-texto">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="obras-img-box">
-                <div class="obras-center-box">
-                    <a href="resources/img/retratos-10.JPG" data-fancybox="group"><img src="resources/img/retratos-10.jpg" alt=""></a>
-                    <div class="obras-box-texto">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="obras-img-box">
-                <div class="obras-center-box obras-center-7">
-                    <a href="resources/img/retratos-11.JPG" data-fancybox="group"><img src="resources/img/retratos-11.jpg" alt=""></a>
-                    <div class="obras-box-texto obras-texto-7">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="obras-img-box">
-                <div class="obras-center-box obras-center-7">
-                    <a href="resources/img/retratos-12.JPG" data-fancybox="group"><img src="resources/img/retratos-12.jpg" alt=""></a>
-                    <div class="obras-box-texto obras-texto-7">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="obras-img-box">
+            </div> -->
+            <!-- <div class="obras-img-box">
                 <div class="obras-center-box obras-center-13">
-                    <a href="resources/img/retratos-13.JPG" data-fancybox="group"><img src="resources/img/retratos-13.jpg" alt=""></a>
+                    <a href="resources/img/retratos-13.jpg" data-fancybox="group"><img src="resources/img/retratos-13.jpg" alt=""></a>
                     <div class="obras-box-texto obras-texto-13">
                         <p>Retratos de la naturaleza</p>
                         <p>Serie</p>
@@ -242,11 +251,11 @@
                         <p>2013</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="obras-img-box">
-                <div class="obras-center-box obras-center-7">
-                    <a href="resources/img/retratos-14.JPG" data-fancybox="group"><img src="resources/img/retratos-14.jpg" alt=""></a>
-                    <div class="obras-box-texto obras-texto-7">
+                <div class="obras-center-box obras-center-7 retratos-responsive-bigger">
+                    <a href="resources/img/retratos-14.jpg" data-fancybox="group"><img src="resources/img/retratos-14.jpg" alt=""></a>
+                    <div class="obras-box-texto obras-texto-7 reatratos-texto-7">
                         <p>Retratos de la naturaleza</p>
                         <p>Serie</p>
                         <p>Litografía</p>
@@ -258,9 +267,9 @@
                 </div>
             </div>
             <div class="obras-img-box">
-                <div class="obras-center-box obras-center-7">
-                    <a href="resources/img/retratos-15.JPG" data-fancybox="group"><img src="resources/img/retratos-15.jpg" alt=""></a>
-                    <div class="obras-box-texto obras-texto-7">
+                <div class="obras-center-box obras-center-7 retratos-responsive-bigger">
+                    <a href="resources/img/retratos-15.jpg" data-fancybox="group"><img src="resources/img/retratos-15.jpg" alt=""></a>
+                    <div class="obras-box-texto obras-texto-7 reatratos-texto-7">
                         <p>Retratos de la naturaleza</p>
                         <p>Serie</p>
                         <p>Litografía</p>
@@ -272,19 +281,93 @@
                 </div>
             </div>
             <div class="obras-img-box">
-                <div class="obras-center-box obras-center-7">
-                    <a href="resources/img/retratos-16.JPG" data-fancybox="group"><img src="resources/img/retratos-16.jpg" alt=""></a>
-                    <div class="obras-box-texto obras-texto-7">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                <div class="obras-center-box obras-center-7 retratos-responsive-bigger">
+                    <a href="resources/img/retratos-16.jpg" data-fancybox="group"><img src="resources/img/retratos-16.jpg" alt=""></a>
+                    <div class="obras-box-texto obras-texto-7 reatratos-texto-7">
+                        <p>Retratos de la naturaleza</p>
+                        <p>Serie</p>
+                        <p>Litografía</p>
+                        <p>1 / 3</p>
+                        <p>38cm x 28cm</p>
+                        <p>Papel Canson Edition</p>
+                        <p>2013</p>
                     </div>
                 </div>
             </div>
             <div class="obras-img-box">
-                <div class="obras-center-box obras-center-7">
-                    <a href="resources/img/retratos-17.JPG" data-fancybox="group"><img src="resources/img/retratos-17.jpg" alt=""></a>
-                    <div class="obras-box-texto obras-texto-7">
+                <div class="obras-center-box obras-center-7 retratos-responsive-bigger">
+                    <a href="resources/img/retratos-17.jpg" data-fancybox="group"><img src="resources/img/retratos-17.jpg" alt=""></a>
+                    <div class="obras-box-texto obras-texto-7 reatratos-texto-7">
+                        <p>Retratos de la naturaleza</p>
+                        <p>Serie</p>
+                        <p>Litografía</p>
+                        <p>1 /3</p>
+                        <p>38cm x 28cm</p>
+                        <p>Papel Canson Edition</p>
+                        <p>2013</p> 
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="obras-img-box">
+                <div class="obras-center-box">
+                    <a href="resources/img/retratos-18.jpg" data-fancybox="group"><img src="resources/img/retratos-18.jpg" alt=""></a>
+                    <div class="obras-box-texto">
+                        <p>Retratos de la naturaleza</p>
+                        <p>Serie</p>
+                        <p>Litografía</p>
+                        <p>1 /3</p>
+                        <p>38cm x 28cm</p>
+                        <p>Papel Canson Edition</p> 
+                        <p>2013</p>
+                    </div>
+                </div>
+            </div> -->
+            <div class="obras-img-box">
+                <div class="obras-center-box obras-center-7 retratos-responsive-bigger">
+                    <a href="resources/img/retratos-19.jpg" data-fancybox="group"><img src="resources/img/retratos-19.jpg" alt=""></a>
+                    <div class="obras-box-texto obras-texto-7 reatratos-texto-7">
+                        <p>Retratos de la naturaleza</p>
+                        <p>Serie</p>
+                        <p>Litografía</p>
+                        <p>1 / 3</p>
+                        <p>38cm x 28cm</p>
+                        <p>Papel Canson Edition</p>
+                        <p>2013</p>
+                    </div>
+                </div>
+            </div>
+            <div class="obras-img-box">
+                <div class="obras-center-box obras-center-7 retratos-responsive-bigger">
+                    <a href="resources/img/retratos-20.jpg" data-fancybox="group"><img src="resources/img/retratos-20.jpg" alt=""></a>
+                    <div class="obras-box-texto obras-texto-7 reatratos-texto-7">
+                        <p>Retratos de la naturaleza</p>
+                        <p>Serie</p>
+                        <p>Litografía</p>
+                        <p>1 / 3</p>
+                        <p>38cm x 28cm</p>
+                        <p>Papel Canson Edition</p>
+                        <p>2013</p>
+                    </div>
+                </div>
+            </div>
+            <div class="obras-img-box">
+                <div class="obras-center-box retratos-responsive">
+                    <a href="resources/img/retratos-21.jpg" data-fancybox="group"><img src="resources/img/retratos-21.jpg" alt=""></a>
+                    <div class="obras-box-texto herbario-texto-last-responsive">
+                        <p>Retratos de la naturaleza</p>
+                        <p>Serie</p>
+                        <p>Litografía</p>
+                        <p>1 /3</p>
+                        <p>38cm x 28cm</p>
+                        <p>Papel Canson Edition</p> 
+                        <p>2013</p>
+                    </div>
+                </div>
+            </div>
+            <div class="obras-img-box">
+                <div class="obras-center-box retratos-responsive">
+                    <a href="resources/img/retratos-22.jpg" data-fancybox="group"><img src="resources/img/retratos-22.jpg" alt=""></a>
+                    <div class="obras-box-texto herbario-texto-last-responsive">
                         <p>Retratos de la naturaleza</p>
                         <p>Serie</p>
                         <p>Litografía</p>
@@ -296,9 +379,9 @@
                 </div>
             </div>
             <div class="obras-img-box">
-                <div class="obras-center-box">
-                    <a href="resources/img/retratos-18.JPG" data-fancybox="group"><img src="resources/img/retratos-18.jpg" alt=""></a>
-                    <div class="obras-box-texto">
+                <div class="obras-center-box retratos-responsive">
+                    <a href="resources/img/retratos-23.jpg" data-fancybox="group"><img src="resources/img/retratos-23.jpg" alt=""></a>
+                    <div class="obras-box-texto herbario-texto-last-responsive">
                         <p>Retratos de la naturaleza</p>
                         <p>Serie</p>
                         <p>Litografía</p>
@@ -306,90 +389,6 @@
                         <p>38cm x 28cm</p>
                         <p>Papel Canson Edition</p> 
                         <p>2013</p>
-                    </div>
-                </div>
-            </div>
-            <div class="obras-img-box">
-                <div class="obras-center-box obras-center-7">
-                    <a href="resources/img/retratos-19.JPG" data-fancybox="group"><img src="resources/img/retratos-19.jpg" alt=""></a>
-                    <div class="obras-box-texto obras-texto-7">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="obras-img-box">
-                <div class="obras-center-box obras-center-7">
-                    <a href="resources/img/retratos-20.JPG" data-fancybox="group"><img src="resources/img/retratos-20.jpg" alt=""></a>
-                    <div class="obras-box-texto obras-texto-7">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="obras-img-box">
-                <div class="obras-center-box">
-                    <a href="resources/img/retratos-21.JPG" data-fancybox="group"><img src="resources/img/retratos-21.jpg" alt=""></a>
-                    <div class="obras-box-texto">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="obras-img-box">
-                <div class="obras-center-box">
-                    <a href="resources/img/retratos-22.JPG" data-fancybox="group"><img src="resources/img/retratos-22.jpg" alt=""></a>
-                    <div class="obras-box-texto">
-                        <p>Retratos de la naturaleza</p>
-                        <p>Serie</p>
-                        <p>Litografía</p>
-                        <p>1 /3</p>
-                        <p>38cm x 28cm</p>
-                        <p>Papel Canson Edition</p>
-                        <p>2013</p> 
-                    </div>
-                </div>
-            </div>
-            <div class="obras-img-box">
-                <div class="obras-center-box">
-                    <a href="resources/img/retratos-23.JPG" data-fancybox="group"><img src="resources/img/retratos-23.jpg" alt=""></a>
-                    <div class="obras-box-texto">
-                        <p>Retratos de la naturaleza</p>
-                        <p>Serie</p>
-                        <p>Litografía</p>
-                        <p>1 /3</p>
-                        <p>38cm x 28cm</p>
-                        <p>Papel Canson Edition</p> 
-                        <p>2013</p>
-                    </div>
-                </div>
-            </div>
-            <div class="obras-img-box">
-                <div class="obras-center-box obras-center-7">
-                    <a href="resources/img/retratos-25.JPG" data-fancybox="group"><img src="resources/img/retratos-25.jpg" alt=""></a>
-                    <div class="obras-box-texto obras-texto-7">
-                        <p>Poema de invierno I</p>
-                        <p>Litografía</p>
-                        <p>1 /2</p>
-                        <p>38cm x 56cm</p>
-                        <p>Papel Canson Edition</p>
-                        <p>2015</p>
-                    </div>
-                </div>
-            </div> 
-            <div class="obras-img-box">
-                <div class="obras-center-box obras-center-7">
-                    <a href="resources/img/retratos-24.JPG" data-fancybox="group"><img src="resources/img/retratos-24.jpg" alt=""></a>
-                    <div class="obras-box-texto obras-texto-7">
-                        <p>Poema de invierno II</p>
-                        <p>Litografía</p>
-                        <p>1 /2</p>
-                        <p>38cm x 56cm</p>
-                        <p>Papel Canson Edition</p>
-                        <p>2015</p>
                     </div>
                 </div>
             </div>
@@ -397,34 +396,331 @@
 
         <div class="thumbnail_slider_area">
             <div class="thumbnail_slider thumbnail_slider-obras">
-                <img src="resources/img/retratos-1.JPG" alt="">
-                <img src="resources/img/retratos-2.JPG" alt="">
-                <img src="resources/img/retratos-3.JPG" alt="">
-                <img src="resources/img/retratos-4.JPG" alt="">
-                <img src="resources/img/retratos-5.JPG" alt="">
-                <img src="resources/img/retratos-6.JPG" alt="">
-                <img src="resources/img/retratos-7.JPG" alt="">
-                <img src="resources/img/retratos-8.JPG" alt="">
-                <img src="resources/img/retratos-9.JPG" alt="">
-                <img src="resources/img/retratos-10.JPG" alt="">
-                <img src="resources/img/retratos-11.JPG" alt="">
-                <img src="resources/img/retratos-12.JPG" alt="">
-                <img src="resources/img/retratos-13.JPG" alt="">
-                <img src="resources/img/retratos-14.JPG" alt="">
-                <img src="resources/img/retratos-15.JPG" alt="">
-                <img src="resources/img/retratos-16.JPG" alt="">
-                <img src="resources/img/retratos-17.JPG" alt="">
-                <img src="resources/img/retratos-18.JPG" alt="">
-                <img src="resources/img/retratos-19.JPG" alt="">
-                <img src="resources/img/retratos-20.JPG" alt="">
-                <img src="resources/img/retratos-21.JPG" alt="">
-                <img src="resources/img/retratos-22.JPG" alt="">
-                <img src="resources/img/retratos-23.JPG" alt="">
-                <img src="resources/img/retratos-24.JPG" alt=""> 
-                <img src="resources/img/retratos-25.JPG" alt=""> 
+                <img src="resources/img/retratos-1.jpg" alt="">
+                <img src="resources/img/retratos-2.jpg" alt="">
+                <img src="resources/img/retratos-3.jpg" alt="">
+                <img src="resources/img/retratos-4.jpg" alt="">
+                <img src="resources/img/retratos-5.jpg" alt="">
+                <img src="resources/img/retratos-6.jpg" alt="">
+                <!-- <img src="resources/img/retratos-8.jpg" alt=""> -->
+                <img src="resources/img/retratos-9.jpg" alt="">
+                <img src="resources/img/retratos-10.jpg" alt="">
+                <img src="resources/img/retratos-7.jpg" alt="">
+                <img src="resources/img/retratos-11.jpg" alt="">
+                <!-- <img src="resources/img/retratos-12.jpg" alt=""> -->
+                <!-- <img src="resources/img/retratos-13.jpg" alt=""> -->
+                <img src="resources/img/retratos-14.jpg" alt="">
+                <img src="resources/img/retratos-15.jpg" alt="">
+                <img src="resources/img/retratos-16.jpg" alt="">
+                <img src="resources/img/retratos-17.jpg" alt="">
+                <!-- <img src="resources/img/retratos-18.jpg" alt=""> -->
+                <img src="resources/img/retratos-19.jpg" alt="">
+                <img src="resources/img/retratos-20.jpg" alt="">
+                <img src="resources/img/retratos-21.jpg" alt="">
+                <img src="resources/img/retratos-22.jpg" alt="">
+                <img src="resources/img/retratos-23.jpg" alt="">
             </div>
         </div>
     </div>
+
+<div class="obras-small-devices">
+
+        <div class="obras-small-devices-box herbario-sd-box">
+            <a href="resources/img/retratos-1.jpg" data-fancybox="group"><img src="resources/img/retratos-1.jpg" alt=""></a>
+            <div class="">
+                <p>De la naturaleza</p>
+                <p>Serie</p>
+                <p>1 /2</p>
+                <p>Fotograbado</p>
+                <p>35cm x 50cm</p>
+                <p>Papel Fabriano Cotton</p>
+                <p>2010</p>
+            </div>
+        </div>
+
+        <div class="obras-small-devices-box herbario-sd-box">
+            <a href="resources/img/retratos-2.jpg" data-fancybox="group"><img src="resources/img/retratos-2.jpg" alt=""></a>
+            <div class="">
+                <p>De la naturaleza</p>
+                <p>Serie</p>
+                <p>1 /2</p>
+                <p>Fotograbado</p>
+                <p>35cm x 50cm</p>
+                <p>Papel Fabriano Cotton</p>
+                <p>2010</p>
+            </div>
+        </div>
+
+        <div class="obras-small-devices-box herbario-sd-box">
+            <a href="resources/img/retratos-3.jpg" data-fancybox="group"><img src="resources/img/retratos-3.jpg" alt=""></a>
+            <div class="">
+                <p>De la naturaleza</p>
+                <p>Serie</p>
+                <p>1 /2</p>
+                <p>Fotograbado</p>
+                <p>35cm x 50cm</p>
+                <p>Papel Fabriano Cotton</p>
+                <p>2010</p>
+            </div>
+        </div>
+
+        <div class="obras-small-devices-box herbario-sd-box">
+            <a href="resources/img/retratos-4.jpg" data-fancybox="group"><img src="resources/img/retratos-4.jpg" alt=""></a>
+            <div class="">
+                <p>De la naturaleza</p>
+                <p>Serie</p>
+                <p>1 /2</p>
+                <p>Fotograbado</p>
+                <p>35cm x 50cm</p>
+                <p>Papel Fabriano Cotton</p>
+                <p>2010</p>
+            </div>
+        </div>
+
+        <div class="obras-small-devices-box herbario-sd-box">
+            <a href="resources/img/retratos-5.jpg" data-fancybox="group"><img src="resources/img/retratos-5.jpg" alt=""></a>
+            <div class="">
+                <p>De la naturaleza</p>
+                <p>Serie</p>
+                <p>1 /2</p>
+                <p>Fotograbado</p>
+                <p>35cm x 50cm</p>
+                <p>Papel Fabriano Cotton</p>
+                <p>2010</p>
+            </div>
+        </div>
+ 
+        <div class="obras-small-devices-box herbario-sd-box">
+            <a href="resources/img/retratos-6.jpg" data-fancybox="group"><img src="resources/img/retratos-6.jpg" alt=""></a>
+            <div class="">
+                <p>De la naturaleza</p>
+                <p>Serie</p>
+                <p>1 /2</p>
+                <p>Fotograbado</p>
+                <p>35cm x 50cm</p>
+                <p>Papel Fabriano Cotton</p>
+                <p>2010</p>
+            </div>
+        </div>
+
+    <!-- <div class="obras-img-box">
+        <div class="obras-center-box obras-center-7">
+            <a href="resources/img/retratos-8.jpg" data-fancybox="group"><img src="resources/img/retratos-8.jpg" alt=""></a>
+            <div class="obras-box-texto obras-texto-7">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </div> -->
+
+        <div class="obras-small-devices-box herbario-sd-box">
+            <a href="resources/img/retratos-9.jpg" data-fancybox="group"><img src="resources/img/retratos-9.jpg" alt=""></a>
+            <div class="">
+                <p>Hilos Negros</p>
+                <p>Serie</p>
+                <p>1 /1</p>
+                <p>Papel hecho a mano, hilos de algodón</p>
+                <p>28cm x 45cm</p>
+                <p>2011</p>
+            </div>
+        </div>
+
+        <div class="obras-small-devices-box herbario-sd-box">
+            <a href="resources/img/retratos-10.jpg" data-fancybox="group"><img src="resources/img/retratos-10.jpg" alt=""></a>
+            <div class="">
+                <p>Hilos Negros</p>
+                <p>Serie</p>
+                <p>1 /1</p>
+                <p>Papel hecho a mano, hilos de algodón</p>
+                <p>28cm x 45cm</p>
+                <p>2011</p>
+            </div>
+        </div>
+
+        <div class="obras-small-devices-box">
+            <a href="resources/img/retratos-7.jpg" data-fancybox="group"><img src="resources/img/retratos-7.jpg" alt=""></a>
+            <div class="">
+                <p>April</p>
+                <p>Litografía</p>
+                <p>1 /2</p>
+                <p>37cm x 100cm</p>
+                <p>Papel Canson Edition</p>
+                <p>2014</p>
+            </div>
+        </div>
+
+        <div class="obras-small-devices-box">
+            <a href="resources/img/retratos-11.jpg" data-fancybox="group"><img src="resources/img/retratos-11.jpg" alt=""></a>
+            <div class="">
+                <p>May</p>
+                <p>Litografía</p>
+                <p>1 /2</p>
+                <p>37cm x 100cm</p>
+                <p>Papel Canson Edition</p>
+                <p>2014</p>
+            </div>
+        </div>
+
+    <!-- <div class="obras-img-box">
+        <div class="obras-center-box obras-center-7">
+            <a href="resources/img/retratos-12.jpg" data-fancybox="group"><img src="resources/img/retratos-12.jpg" alt=""></a>
+            <div class="obras-box-texto obras-texto-7">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </div> -->
+    <!-- <div class="obras-img-box">
+        <div class="obras-center-box obras-center-13">
+            <a href="resources/img/retratos-13.jpg" data-fancybox="group"><img src="resources/img/retratos-13.jpg" alt=""></a>
+            <div class="obras-box-texto obras-texto-13">
+                <p>Retratos de la naturaleza</p>
+                <p>Serie</p>
+                <p>Litografía</p>
+                <p>1 /3</p>
+                <p>38cm x 28cm</p>
+                <p>Papel Canson Edition</p> 
+                <p>2013</p>
+            </div>
+        </div>
+    </div> -->
+
+        <div class="obras-small-devices-box">
+            <a href="resources/img/retratos-14.jpg" data-fancybox="group"><img src="resources/img/retratos-14.jpg" alt=""></a>
+            <div class="">
+                <p>Retratos de la naturaleza</p>
+                <p>Serie</p>
+                <p>Litografía</p>
+                <p>1 /3</p>
+                <p>38cm x 28cm</p>
+                <p>Papel Canson Edition</p> 
+                <p>2013</p>
+            </div>
+        </div>
+
+        <div class="obras-small-devices-box">
+            <a href="resources/img/retratos-15.jpg" data-fancybox="group"><img src="resources/img/retratos-15.jpg" alt=""></a>
+            <div class="">
+                <p>Retratos de la naturaleza</p>
+                <p>Serie</p>
+                <p>Litografía</p>
+                <p>1 /3</p>
+                <p>38cm x 28cm</p>
+                <p>Papel Canson Edition</p> 
+                <p>2013</p>
+            </div>
+        </div>
+
+        <div class="obras-small-devices-box">
+            <a href="resources/img/retratos-16.jpg" data-fancybox="group"><img src="resources/img/retratos-16.jpg" alt=""></a>
+            <div class="">
+                <p>Retratos de la naturaleza</p>
+                <p>Serie</p>
+                <p>Litografía</p>
+                <p>1 / 3</p>
+                <p>38cm x 28cm</p>
+                <p>Papel Canson Edition</p>
+                <p>2013</p>
+            </div>
+        </div>
+
+        <div class="obras-small-devices-box">
+            <a href="resources/img/retratos-17.jpg" data-fancybox="group"><img src="resources/img/retratos-17.jpg" alt=""></a>
+            <div class="">
+                <p>Retratos de la naturaleza</p>
+                <p>Serie</p>
+                <p>Litografía</p>
+                <p>1 /3</p>
+                <p>38cm x 28cm</p>
+                <p>Papel Canson Edition</p>
+                <p>2013</p> 
+            </div>
+        </div>
+
+    <!-- <div class="obras-img-box">
+        <div class="obras-center-box">
+            <a href="resources/img/retratos-18.jpg" data-fancybox="group"><img src="resources/img/retratos-18.jpg" alt=""></a>
+            <div class="obras-box-texto">
+                <p>Retratos de la naturaleza</p>
+                <p>Serie</p>
+                <p>Litografía</p>
+                <p>1 /3</p>
+                <p>38cm x 28cm</p>
+                <p>Papel Canson Edition</p> 
+                <p>2013</p>
+            </div>
+        </div>
+    </div> -->
+
+        <div class="obras-small-devices-box">
+            <a href="resources/img/retratos-19.jpg" data-fancybox="group"><img src="resources/img/retratos-19.jpg" alt=""></a>
+            <div class="">
+                <p>Retratos de la naturaleza</p>
+                <p>Serie</p>
+                <p>Litografía</p>
+                <p>1 / 3</p>
+                <p>38cm x 28cm</p>
+                <p>Papel Canson Edition</p>
+                <p>2013</p>
+            </div>
+        </div>
+
+        <div class="obras-small-devices-box">
+            <a href="resources/img/retratos-20.jpg" data-fancybox="group"><img src="resources/img/retratos-20.jpg" alt=""></a>
+            <div class="">
+                <p>Retratos de la naturaleza</p>
+                <p>Serie</p>
+                <p>Litografía</p>
+                <p>1 / 3</p>
+                <p>38cm x 28cm</p>
+                <p>Papel Canson Edition</p>
+                <p>2013</p>
+            </div>
+        </div>
+
+        <div class="obras-small-devices-box herbario-sd-box">
+            <a href="resources/img/retratos-21.jpg" data-fancybox="group"><img src="resources/img/retratos-21.jpg" alt=""></a>
+            <div class="">
+                <p>Retratos de la naturaleza</p>
+                <p>Serie</p>
+                <p>Litografía</p>
+                <p>1 /3</p>
+                <p>38cm x 28cm</p>
+                <p>Papel Canson Edition</p> 
+                <p>2013</p>
+            </div>
+        </div>
+
+        <div class="obras-small-devices-box herbario-sd-box">
+            <a href="resources/img/retratos-22.jpg" data-fancybox="group"><img src="resources/img/retratos-22.jpg" alt=""></a>
+            <div class="">
+                <p>Retratos de la naturaleza</p>
+                <p>Serie</p>
+                <p>Litografía</p>
+                <p>1 /3</p>
+                <p>38cm x 28cm</p>
+                <p>Papel Canson Edition</p>
+                <p>2013</p> 
+            </div>
+        </div>
+
+        <div class="obras-small-devices-box herbario-sd-box">
+            <a href="resources/img/retratos-23.jpg" data-fancybox="group"><img src="resources/img/retratos-23.jpg" alt=""></a>
+            <div class="">
+                <p>Retratos de la naturaleza</p>
+                <p>Serie</p>
+                <p>Litografía</p>
+                <p>1 /3</p>
+                <p>38cm x 28cm</p>
+                <p>Papel Canson Edition</p> 
+                <p>2013</p>
+            </div>
+        </div>
+  
+</div>
+
 </div>
 
 <footer>
@@ -441,6 +737,8 @@
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
     <script src="vendors/js/jquery.fancybox.min.js"></script>
+        <!-- Fontawesome -->
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
         <!-- JQuery -->
         <script
         src="https://code.jquery.com/jquery-3.4.1.js"

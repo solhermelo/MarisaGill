@@ -18,15 +18,18 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/media-queries.css">
     
 
 </head>
 <body>
     <div class="nav-img-box">
     <header>
-        <nav role="navigation">
-            <a href="index.html" class="logo-me">MARISA <span>GILL</span> </a>
-
+        <a href="index.html" class="logo-me">MARISA <span>GILL</span> </a>
+        <div class="mobile-nav-burger js--mobile-nav-icon">
+            <a><ion-icon name="menu"></ion-icon></a>
+          </div>
+        <nav>
             <div class="main-nav-me js--mobile-nav-1" id="js-about">
                 <a>ABOUT</a>
                 <div class="dropdown active-me dropdown-1" id="js-drop-about">
@@ -44,22 +47,22 @@
                 <a>OBRAS</a>
                 <div class="dropdown active-me dropdown-2" id="js-drop-obras">
                     <div class="main-nav-me">
+                        <a href="haikus.html">Haiku</a>
+                    </div>
+                    <div class="main-nav-me">
+                        <a href="nocturnos.html">Nocturnos</a>
+                    </div>
+                    <div class="main-nav-me">
+                        <a href="poemas.html">Poemas</a>
+                    </div>
+                    <div class="main-nav-me">
                         <a href="suite.html">Suite</a>
                     </div>
                     <div class="main-nav-me">
                         <a href="herbario.html">Herbario</a>
                     </div>
                     <div class="main-nav-me">
-                        <a href="retratos.html">Retratos de la naturaleza</a>
-                    </div>
-                    <div class="main-nav-me">
-                        <a href="poemas.html">Poemas</a>
-                    </div>
-                    <div class="main-nav-me">
-                        <a href="nocturnos.html">Nocturnos</a>
-                    </div>
-                    <div class="main-nav-me">
-                        <a href="haikus.html">Haiku</a>
+                        <a href="retratos.html">De la naturaleza</a>
                     </div>
                 </div>
             </div>
@@ -146,7 +149,8 @@
 <footer>
     <p>&copy; <script>document.write( new Date().getFullYear() );</script> Marisa Gill</p>
   </footer>
-
+    <!-- Fontawesome -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 <!-- JQuery -->
 <script
 src="https://code.jquery.com/jquery-3.4.1.js"
